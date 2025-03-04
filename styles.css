@@ -1,0 +1,131 @@
+.my-photo {
+    width: 195px;
+}
+
+.text-amaranth {
+  color: #A40E4C;
+}
+
+.none-bullet-point {
+  list-style-type: none;
+}
+
+.blue-bullet-point {
+  list-style-type: none;
+}
+
+.blue-bullet-point::before {
+  content: "\25CF";
+  color: rgb(28, 69, 135);
+  font-size: 12px;
+  margin-right: 5px; /* Add margin to the right */
+}
+
+#visitor-counter {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgb(28, 69, 135);;; /* Match your page's color scheme */
+  padding: 5px 15px;
+  border-radius: 15px;
+  display: inline-block;
+}
+
+#visitor-counter {
+  position: relative;
+}
+
+#visitor-counter:hover::after {
+  content: "Number of visitors to this site";
+  position: absolute;
+  top: -30px;
+  left: 0;
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0); }
+}
+
+#visitor-counter {
+  animation: float 3s ease-in-out infinite;
+}
+
+
+/*Media Queries*/
+
+@media (max-width: 992px) {
+    .top-links {
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+    .my-photo {
+        width: 175px;
+    }
+  }
+
+/*Font Classes*/
+
+.noto-serif-light {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.noto-serif-regular {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+
+.poppins-thin {
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    color: aquamarine;
+  }
+  
+  .poppins-extralight {
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-light {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: #1c4587;
+  }
+  
+  .poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+
+  
