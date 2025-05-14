@@ -1,4 +1,5 @@
-const apiUrl = "https://exo1zfvbv1.execute-api.us-east-1.amazonaws.com/miguelPuentesSiteCounter";
+const apiUrl = "@@API_URL@@";
+
 
 //Llamada a la API del counter
 
