@@ -1,0 +1,24 @@
+name: Static Site Checks
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Check HTML validity
+        uses: Cyb3r-Jak3/html5validator-action@v0.1.0
+        with:
+          root: .
+
+      - name: Check for trailing whitespace
+        run: |
+          grep -rnI '[[:blank:]]$' . && exit 1 || echo "No trailing whitespace found."
